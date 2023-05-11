@@ -9,7 +9,7 @@ import com.example.pictgram.validation.constraints.ImageByte;
 import com.example.pictgram.validation.constraints.ImageNotEmpty;
 
 import lombok.Data;
-
+import java.util.List;
 @Data
 public class TopicForm {
 
@@ -31,4 +31,7 @@ public class TopicForm {
 
     private UserForm user;
 
+    private List<FavoriteForm> favorites;
+    
+    private FavoriteForm favorite;
 }
