@@ -1,6 +1,7 @@
 package com.example.pictgram.controller;
 
 import java.io.ByteArrayOutputStream;
+import org.springframework.http.ResponseEntity;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -102,6 +103,7 @@ public class TopicsController {
 		}
 		model.addAttribute("list", list);
 
+       model.addAttribute("hasFooter", true);
 		return "topics/index";
 	}
 

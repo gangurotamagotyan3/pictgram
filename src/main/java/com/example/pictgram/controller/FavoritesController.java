@@ -51,6 +51,7 @@ public class FavoritesController {
         }
         model.addAttribute("list", list);
 
+        model.addAttribute("hasFooter", true);
         return "topics/index";
     }
 
